@@ -3,9 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace JwtAuthModels.Data
 {
-    public class User
+    public class User : EntityBase
     {
-        public int Id { get; set; }
         [Required, MaxLength(100)]
         public string Email { get; set; }
         [Required]
